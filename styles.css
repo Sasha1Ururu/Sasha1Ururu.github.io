@@ -8,11 +8,50 @@ body {
     font-family: Consolas, Menlo, Monaco, 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
     background-color: #000;
     color: #a0a0a0;
     border: 2px solid #a0a0a0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    flex-grow: 1;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 }
 
 header {
@@ -29,6 +68,11 @@ header {
 .logo h1 {
     font-size: 1.5rem;
     text-transform: uppercase;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #a0a0a0;
 }
 
 nav ul {
@@ -53,22 +97,26 @@ nav ul li a:hover {
 main {
     background-color: #000;
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    text-align: center;
+    padding: 2rem 0;
     border-bottom: 1px solid #a0a0a0;
 }
 
-h3 {
+h2 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
 
 p {
     line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.ascii-art {
+    font-family: monospace;
+    white-space: pre;
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
 }
 
 footer {
@@ -90,3 +138,11 @@ main p::after {
     font-weight: bold;
 }
 
+a {
+    color: #a0a0a0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
