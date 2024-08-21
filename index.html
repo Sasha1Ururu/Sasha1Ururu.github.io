@@ -3,32 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terminal-Style Website</title>
+    <title>Web Scraping Specialist</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Terminal Website v1.0</h1>
-        </div>
+    <header class="main-header">
+        <h1 class="logo"><a href="index.html">Web Scraping Specialist</a></h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="cv.html">Career</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h3>Welcome to Our Terminal-Style Website</h3>
-        <p>This is a single-page website with no scrolling. The content is brief and fits within a single view.</p>
+        <section class="upper-section">
+            <h2>What I do</h2>
+            <p>I create software to extract data from the web, primarily. I also do all the fun stuff around data scraping, like integrations with other services or creating full-blown dashboards with real-time data from multiple websites.</p>
+        </section>
+
+        <section class="lower-section">
+            <div class="text-content">
+                <h2>Who am I?</h2>
+                <p>I'm a cat, as this shouldn't matter.</p>
+                <p>*see section "What I do" just above or <a href="projects.html">visit the Projects page</a> for things that matter</p>
+            </div>
+            <div class="image-content">
+                <!-- Add an ASCII art of a cat here -->
+                <pre>
+  /\_/\  
+ ( o.o ) 
+  > ^ <
+                </pre>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2023 Terminal-Style Website. All rights reserved.</p>
+    <footer class="main-footer">
+        <p>&copy; 2023 Web Scraping Specialist. All rights reserved.</p>
     </footer>
 </body>
 </html>
-
