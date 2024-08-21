@@ -4,53 +4,40 @@
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
+html, body {
+    height: 100vh;
+    overflow: hidden;
     font-family: Consolas, Menlo, Monaco, 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
     background-color: #000;
     color: #a0a0a0;
+}
+
+body {
     border: 2px solid #a0a0a0;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-[class*="col-"] {
-    width: 100%;
-    padding: 0 15px;
-}
-
-@media only screen and (min-width: 768px) {
-    .col-8 {width: 66.66%;}
-    .col-4 {width: 33.33%;}
-    .col-12 {width: 100%;}
+    padding: 1vh;
 }
 
 header {
-    background-color: #000;
+    flex: 0 0 auto;
     border-bottom: 1px solid #a0a0a0;
-    padding: 1rem;
+    padding: 1vh 0;
 }
 
 .logo {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1vh;
 }
 
 .logo h1 {
-    font-size: 1.5rem;
+    font-size: 2.5vh;
     text-transform: uppercase;
 }
 
@@ -66,12 +53,13 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 2vw;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #a0a0a0;
+    font-size: 2vh;
 }
 
 nav ul li a::before {
@@ -83,11 +71,15 @@ nav ul li a::after {
 }
 
 main {
-    flex-grow: 1;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: #000;
-    border-bottom: 1px solid #a0a0a0;
+}
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .block {
@@ -96,43 +88,33 @@ main {
     align-items: center;
 }
 
-.block-content {
-    width: 100%;
-}
-
-.spacer, .block {
-    min-height: 33.33vh;
+.spacer {
+    flex: 0.5;
 }
 
 h2 {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 2.2vh;
+    margin-bottom: 1vh;
 }
 
-h2, p {
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto 1rem;
+p {
+    font-size: 1.8vh;
+    line-height: 1.4;
+    margin-bottom: 1vh;
 }
 
 .ascii-art {
-    font-family: monospace;
+    font-size: 1.8vh;
     white-space: pre;
-    font-size: 14px;
-    line-height: 1;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
 }
 
 footer {
-    background-color: #000;
+    flex: 0 0 auto;
     text-align: center;
-    padding: 1rem;
-    font-size: 0.8rem;
-    margin-top: auto;
+    padding: 1vh 0;
+    font-size: 1.5vh;
+    border-top: 1px solid #a0a0a0;
 }
 
 @keyframes blink {
@@ -141,7 +123,7 @@ footer {
     100% { opacity: 0; }
 }
 
-main p::after {
+p::after {
     content: "|";
     animation: blink 1s infinite;
     font-weight: bold;
@@ -154,4 +136,14 @@ a {
 
 a:hover {
     color: #ffffff;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .row {
+        flex-direction: column;
+    }
+    
+    .col-8, .col-4 {
+        width: 100%;
+    }
 }
