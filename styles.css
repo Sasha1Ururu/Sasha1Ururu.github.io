@@ -12,17 +12,23 @@ html, body {
     color: #a0a0a0;
 }
 
-body {
-    border: 2px solid #a0a0a0;
+.square-wrapper {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
 }
 
 .container {
-    flex: 1;
+    aspect-ratio: 1 / 1;
+    height: 100vh;
+    max-height: 100vw;
+    max-width: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 1vh;
+    border: 2px solid #a0a0a0;
+    overflow: hidden;
 }
 
 header {
@@ -123,7 +129,7 @@ footer {
     100% { opacity: 0; }
 }
 
-p::after {
+footer p::after {
     content: "|";
     animation: blink 1s infinite;
     font-weight: bold;
