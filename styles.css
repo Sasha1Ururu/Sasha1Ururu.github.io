@@ -107,19 +107,19 @@ main {
 }
 
 h2 {
-    font-size: 4.4vh;
+    font-size: 2.7vh;
     margin-bottom: 2vh;
     text-transform: uppercase;
 }
 
 p {
-    font-size: 3.6vh;
+    font-size: 2.5vh;
     line-height: 1.4;
     margin-bottom: 2vh;
 }
 
 .ascii-art {
-    font-size: 7.2vh;
+    font-size: 3.6vh;
     white-space: pre;
     display: grid;
     place-items: center;
