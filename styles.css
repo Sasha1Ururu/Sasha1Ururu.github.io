@@ -155,19 +155,19 @@ footer p {
     font-size: 2vh;
 }
 
-+footer strong {
-+  vertical-align: sub;
-+  transform: scale(1.6);
-+  display: inline-block;
-+  padding: 0 3px 0 0px;
-+  margin: 0 0 0 2px;
-+}
-+
+footer strong {
+  vertical-align: sub;
+  transform: scale(1.6);
+  display: inline-block;
+  padding: 0 3px 0 0px;
+  margin: 0 0 0 2px;
+}
+
 
 @keyframes blink {
-    0% { opacity: 0; }
-    50% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {}
+    50% { color: black; }
+    100% {}
 }
 
 footer p::after {
