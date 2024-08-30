@@ -8,7 +8,7 @@ html, body {
     height: 100vh;
     font-family: Consolas, Menlo, Monaco, 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
     background-color: #000;
-    color: #a0a0a0;
+    color: #ff7e00;
     font-size: 16px; /* Base font size */
 }
 
@@ -57,7 +57,7 @@ header {
 
 .logo a {
     text-decoration: none;
-    color: #a0a0a0;
+    color:  #ff7e00;;
 }
 
 .logo a::before {
@@ -82,7 +82,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #a0a0a0;
+    color: #ff7e00;
     font-size: 2.5vh;
     text-transform: uppercase;
     white-space: nowrap;
@@ -109,12 +109,13 @@ main {
 }
 
 .content-wrapper > * {
-    margin-left: 2vh;
-    margin-right: 2vh;
-}
+    margin-left: 3vh;
+    margin-right: 1vh;
+    margin-bottom: 3vh;
+ }
 
 .block {
-    padding: 2vh;
+    padding: 0vh 3vh 2vh 1vh;
 }
 
 .two-column {
@@ -125,14 +126,13 @@ main {
 
 h2 {
     font-size: 2.5vh;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
     text-transform: uppercase;
 }
 
 p {
     font-size: 2vh;
     line-height: 1.4;
-    margin-bottom: 2vh;
 }
 
 .ascii-art {
@@ -157,7 +157,7 @@ footer p {
 
 footer strong {
   vertical-align: sub;
-  transform: scale(1.6);
+  transform: scale(1.4);
   display: inline-block;
   padding: 0 3px 0 0px;
   margin: 0 0 0 2px;
@@ -177,12 +177,12 @@ footer p::after {
 }
 
 a {
-    color: #a0a0a0;
+    color: #ff7e00;
     text-decoration: none;
 }
 
 a:hover {
-    color: #ffffff;
+    color: #b45d09
 }
 
 @media (max-aspect-ratio: 1/1) {
