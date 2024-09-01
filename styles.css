@@ -9,11 +9,12 @@ html, body {
     font-family: Consolas, Menlo, Monaco, 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
     background-color: #000;
     color: #ff7e00;
-    font-size: 16px; /* Base font size */
+    font-size: 13px; /* Base font size */
 }
 
 h1 {
-    font-size: 4vh;
+    font-size: 26px;
+    text-transform: uppercase;
 }
 
 .square-wrapper {
@@ -50,11 +51,6 @@ header {
     margin: 0 2vh;
 }
 
-.logo h1 {
-    font-size: 3vh;
-    text-transform: uppercase;
-}
-
 .logo a {
     text-decoration: none;
     color:  #ff7e00;;
@@ -75,7 +71,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: #ff7e00;
-    font-size: 2.5vh;
+    font-size: 18px;
     text-transform: uppercase;
     white-space: nowrap;
 }
@@ -118,7 +114,7 @@ main {
 }
 
 h2 {
-    font-size: 2.5vh;
+    font-size: 18px;
     margin-bottom: 1vh;
     text-transform: uppercase;
 }
@@ -130,13 +126,13 @@ h3 {
 }
 
 p {
-    font-size: 1.7vh;
+    font-size: 13px;
     line-height: 1.4;
     text-transform: uppercase;
 }
 
 .ascii-art {
-    font-size: 3.6vh;
+    font-size: 30px;
     white-space: pre;
     display: grid;
     place-items: center;
@@ -145,14 +141,13 @@ p {
 footer {
     text-align: center;
     padding: 2vh 0;
-    font-size: 3vh;
     border-top: 1.5px solid #ff7e00;
 }
 
 footer p {
     margin: 0 2vh 0 2vh;
     text-align: center;
-    font-size: 2vh;
+    font-size: 11px;
 }
 
 footer strong {
