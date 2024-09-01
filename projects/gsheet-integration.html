@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Web Scraping Specialist</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="square-wrapper">
+        <div class="container">
+            <header>
+                <h1 class="logo"><a href="../index.html">Sasha Ururu</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="../story.html">Story</a></li>
+                        <li><a href="../projects.html">Projects</a></li>
+                        <li><a href="../contacts.html">Contacts</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="content-wrapper">
+                   <div class="block">
+                        <h2>Client request</h2>
+                        <p>"I want to collect prices from 3 sources"</p>
+                        <p>"Once per 10 minutes"</p>
+                        <p>"compare prices and make deals based on data"</p>
+                    </div>
+                    <div class="block">
+                        <h2>Solution</h2>
+                        <p>Scraping required some JS-jutsu and proxy usage, but nothing outstanding.</p>
+                        <p>For analysis part - I proposed uploading data to google sheets as it is a splendid analyst tool out-of-the-box with well-documented API.</p>
+                        <p>Added new synthetic fields calculating price differences (calculated with pure Google Sheet formulas, delightful). Each item title is a link (thanks to formulas again), so the deal that my client wants is always one click away - very convenient.</p>
+                        <p>Simple cronjob starts the scraping scripts once per 10 minutes. Each script updates a single Google Sheet with new data.</p>
+                        <p>The tricky part was to preserve user-defined filters. On rewrite they purged completely - that was an API limitation I had no control of.</p>
+                        <p>What did work - save filters before upload and set them back just after the data entered the sheet.</p>
+                        <p>From user experience it was unnoticeable, so it's a big W</p>
+                    </div>
+                    <div class="block">
+                        <h2>And it was fun! ^^</h2>
+                    </div>
+                    <div class="block">
+                        <h2>Tech stack</h2>
+                        <p>Python</p>
+                        <p>Scrapy</p>
+                        <p>Google Spreadsheets API</p>
+                        <p>Linux VPS</p>
+                    </div>
+                    <div class="block">
+                        <h2>Year</h2>
+                        <p>2017</p>
+                    </div>
+                    <div class="block">
+                        <h2>Price</h2>
+                        <p>700 $</p>
+                    </div>
+                    <div class="block">
+                        <h2>Running costs</h2>
+                        <p>VPS - 5$/month</p>
+                        <p>Proxy - 0.2$/month</p>
+                    </div>
+               </div>
+            </main>
+            <footer>
+                <p>I respect written/spoken contracts (NDA included). But not <strong>&copy;</strong>opyright. Feel free to use what you see.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
