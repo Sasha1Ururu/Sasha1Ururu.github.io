@@ -30,12 +30,12 @@ h1 {
     max-width: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    border: 2px solid #a0a0a0;
+    border: 1.5px solid #ff7e00;
     overflow: auto;
 }
 
 header {
-    border-bottom: 1px solid #a0a0a0;
+    border-bottom: 1.5px solid #ff7e00;
     padding: 2vh 0;
     display: grid;
     gap: 2vh;
@@ -146,7 +146,7 @@ footer {
     text-align: center;
     padding: 2vh 0;
     font-size: 3vh;
-    border-top: 1px solid #a0a0a0;
+    border-top: 1.5px solid #ff7e00;
 }
 
 footer p {
