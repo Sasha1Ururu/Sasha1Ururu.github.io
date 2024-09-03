@@ -142,6 +142,12 @@ p.quote::before {
     user-select: none;
 }
 
+.ascii-art,
+.ascii-art * {
+    outline: none!important;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
 .ascii-art>pre {
     position: relative;
     cursor: pointer;
