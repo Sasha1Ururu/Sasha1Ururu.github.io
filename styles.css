@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100vh;
     font-family: Consolas, Menlo, Monaco, 'Liberation Mono', 'DejaVu Sans Mono', 'Courier New', monospace;
     background-color: #000;
     color: #ff7e00;
-    font-size: 18px; /* Base font size */
+    font-size: 13px;
+    /* Base font size */
     text-transform: uppercase;
 }
 
@@ -53,7 +55,8 @@ header {
 
 .logo a {
     text-decoration: none;
-    color:  #ff7e00;;
+    color: #ff7e00;
+    ;
 }
 
 nav {
@@ -78,6 +81,7 @@ nav ul li a {
 a {
     display: inline-block;
 }
+
 a::before {
     content: "< ";
 }
@@ -101,10 +105,10 @@ main {
     padding-top: 2vh;
 }
 
-.content-wrapper > * {
+.content-wrapper>* {
     margin: 0 2vh 3vh;
     padding: 0vh 1.5vh 2vh;
-}   
+}
 
 .two-column {
     display: grid;
@@ -113,7 +117,7 @@ main {
 }
 
 h2 {
-    font-size: 140%;
+    font-size: 130%;
     margin-bottom: 1vh;
 }
 
@@ -128,16 +132,19 @@ p {
 
 .ascii-art {
     font-size: 230.75%;
+    text-transform: none;
     white-space: pre;
     display: grid;
     place-items: center;
 }
-.ascii-art > pre {
+
+.ascii-art>pre {
     position: relative;
     cursor: pointer;
 }
-.ascii-art > pre::before {
-    content: 'No touching!';
+
+.ascii-art>pre::before {
+    content: 'NO TOUCHING!';
     position: absolute;
     left: 50%;
     top: 100%;
@@ -151,21 +158,21 @@ p {
     font-size: 16px;
     line-height: 1.3em;
     background-color: #000;
-    box-shadow: 
-        0 -4px #000, 
-        0 -8px #ff7e00, 
-        4px 0 #000, 
-        4px -4px #ff7e00, 
-        8px 0 #ff7e00, 
-        0 4px #000, 
-        0 8px #ff7e00, 
-        -4px 0 #000, 
-        -4px 4px #ff7e00, 
-        -8px 0 #ff7e00, 
-        -4px -4px #ff7e00, 
-        4px 4px #ff7e00, 
-        4px 12px rgba(0, 0, 0, 0.1), 
-        12px 4px rgba(0, 0, 0, 0.1), 
+    box-shadow:
+        0 -4px #000,
+        0 -8px #ff7e00,
+        4px 0 #000,
+        4px -4px #ff7e00,
+        8px 0 #ff7e00,
+        0 4px #000,
+        0 8px #ff7e00,
+        -4px 0 #000,
+        -4px 4px #ff7e00,
+        -8px 0 #ff7e00,
+        -4px -4px #ff7e00,
+        4px 4px #ff7e00,
+        4px 12px rgba(0, 0, 0, 0.1),
+        12px 4px rgba(0, 0, 0, 0.1),
         8px 8px rgba(0, 0, 0, 0.1);
     font-weight: bold;
     transform-origin: center;
@@ -174,7 +181,8 @@ p {
     visibility: hidden;
     opacity: 0;
 }
-.ascii-art > pre::after {
+
+.ascii-art>pre::after {
     content: '>.<';
     position: absolute;
     left: 30%;
@@ -187,13 +195,14 @@ p {
 }
 
 
-.ascii-art > pre:hover:active {
+.ascii-art>pre:hover:active {
     transform-origin: center;
     transform: scale(.9);
     user-select: none;
 }
-.ascii-art > pre:hover:active::before,
-.ascii-art > pre:hover:active::after {
+
+.ascii-art>pre:hover:active::before,
+.ascii-art>pre:hover:active::after {
     visibility: visible;
     opacity: 1;
 }
@@ -214,6 +223,7 @@ footer copyright {
     display: inline-block;
     position: relative;
 }
+
 footer copyright::before {
     content: '\00A9';
     display: inline-block;
@@ -221,10 +231,12 @@ footer copyright::before {
     transform: scale(1.4);
     padding-right: 1px;
 }
-footer copyright > span {
+
+footer copyright>span {
     display: inline-block;
 }
-footer copyright > span::first-letter {
+
+footer copyright>span::first-letter {
     font-size: 0;
 }
 
@@ -239,7 +251,11 @@ footer strong {
 
 @keyframes blink {
     0% {}
-    50% { color: black; }
+
+    50% {
+        color: black;
+    }
+
     100% {}
 }
 
@@ -259,14 +275,16 @@ a:hover {
 }
 
 @media (max-aspect-ratio: 1/1) {
-    html, body {
+
+    html,
+    body {
         font-size: 10px;
     }
 
     .square-wrapper {
         height: auto;
     }
-    
+
     .container {
         aspect-ratio: auto;
         max-height: none;
@@ -278,16 +296,16 @@ a:hover {
     nav ul {
         gap: 2.5vw;
     }
-    
+
     .two-column {
         grid-template-columns: 1fr;
     }
-    
+
     header {
         position: sticky;
         top: 0;
     }
-    
+
     .content-wrapper {
         grid-template-rows: auto;
     }
