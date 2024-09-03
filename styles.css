@@ -33,12 +33,12 @@ h1 {
     max-width: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    border: 1.5px solid #ff7e00;
+    border: 0.1rem solid #ff7e00;
     overflow: auto;
 }
 
 header {
-    border-bottom: 1.5px solid #ff7e00;
+    border-bottom: 0.1rem solid #ff7e00;
     padding: 2vh 0;
     display: grid;
     gap: 2vh;
@@ -94,7 +94,6 @@ main {
     display: grid;
     overflow: auto;
     scrollbar-color: #ff7e00 transparent;
-    min-height: 10px;
 }
 
 .content-wrapper {
@@ -140,6 +139,7 @@ p.quote::before {
     white-space: pre;
     display: grid;
     place-items: center;
+    user-select: none;
 }
 
 .ascii-art>pre {
@@ -157,7 +157,7 @@ p.quote::before {
     align-items: center;
     justify-content: center;
     padding: 5%;
-    margin-top: 15px;
+    margin-top: 0.7rem;
     text-align: center;
     font-size: 40%;
     line-height: 1.3em;
@@ -198,7 +198,6 @@ p.quote::before {
 .ascii-art>pre:hover:active {
     transform-origin: center;
     transform: scale(.9);
-    user-select: none;
 }
 
 .ascii-art>pre:hover:active::before,
@@ -210,7 +209,7 @@ p.quote::before {
 footer {
     text-align: center;
     padding: 2vh 0;
-    border-top: 1.5px solid #ff7e00;
+    border-top: 0.1rem solid #ff7e00;
 }
 
 footer p {
@@ -231,7 +230,7 @@ footer copyright::before {
     display: inline-block;
     vertical-align: text-top;
     transform: scale(1.4);
-    padding-right: 1.5px;
+    padding-right: 0.1rem;
 }
 
 footer copyright>span {
@@ -241,15 +240,6 @@ footer copyright>span {
 footer copyright>span::first-letter {
     font-size: 0;
 }
-
-footer strong {
-    vertical-align: text-top;
-    transform: scale(1.4);
-    display: inline-block;
-    padding: 0 3px 0 0px;
-    margin: 0 0 0 2px;
-}
-
 
 @keyframes blink {
     0% {}
