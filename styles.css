@@ -151,6 +151,7 @@ p.quote::before {
 .ascii-art>code {
     position: relative;
     cursor: pointer;
+    padding: 0 1.5rem;
 }
 
 .ascii-art>code::before {
@@ -191,8 +192,8 @@ p.quote::before {
 .ascii-art>code::after {
     content: '>.<';
     position: absolute;
-    left: 30%;
-    right: 30%;
+    left: 25%;
+    right: 25%;
     top: 34%;
     text-align: center;
     background: #000;
