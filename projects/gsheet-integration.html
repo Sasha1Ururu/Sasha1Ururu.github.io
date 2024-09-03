@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Web Scraping Specialist</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
     <div class="square-wrapper">
         <div class="container">
@@ -21,20 +23,26 @@
             </header>
             <main>
                 <div class="content-wrapper">
-                   <div class="block">
+                    <div class="block">
                         <h2>Client request</h2>
-                        <p>"I want to collect prices from 3 sources"</p>
-                        <p>"Once per 10 minutes"</p>
-                        <p>"compare prices and make deals based on data"</p>
+                        <p class='quote'>"I want to collect prices from 3 sources"</p>
+                        <p class='quote'>"Once per 10 minutes"</p>
+                        <p class='quote'>"compare prices and make deals based on data"</p>
                     </div>
                     <div class="block">
                         <h2>Solution</h2>
                         <p>Scraping required some JS-jutsu and proxy usage, but nothing outstanding.</p>
-                        <p>For analysis part - I proposed uploading data to google sheets as it is a splendid analyst tool out-of-the-box with well-documented API.</p>
-                        <p>Added new synthetic fields calculating price differences (calculated with pure Google Sheet formulas, delightful). Each item title is a link (thanks to formulas again), so the deal that my client wants is always one click away - very convenient.</p>
-                        <p>Simple cronjob starts the scraping scripts once per 10 minutes. Each script updates a single Google Sheet with new data.</p>
-                        <p>The tricky part was to preserve user-defined filters. On rewrite they purged completely - that was an API limitation I had no control of.</p>
-                        <p>What did work - save filters before upload and set them back just after the data entered the sheet.</p>
+                        <p>For analysis part - I proposed uploading data to google sheets as it is a splendid analyst
+                            tool out-of-the-box with well-documented API.</p>
+                        <p>Added new synthetic fields calculating price differences (calculated with pure Google Sheet
+                            formulas, delightful). Each item title is a link (thanks to formulas again), so the deal
+                            that my client wants is always one click away - very convenient.</p>
+                        <p>Simple cronjob starts the scraping scripts once per 10 minutes. Each script updates a single
+                            Google Sheet with new data.</p>
+                        <p>The tricky part was to preserve user-defined filters. On rewrite they purged completely -
+                            that was an API limitation I had no control of.</p>
+                        <p>What did work - save filters before upload and set them back just after the data entered the
+                            sheet.</p>
                         <p>From user experience it was unnoticeable, so it's a big W</p>
                     </div>
                     <div class="block">
@@ -60,12 +68,14 @@
                         <p>VPS - 5$/month</p>
                         <p>Proxy - 0.2$/month</p>
                     </div>
-               </div>
+                </div>
             </main>
             <footer>
-                <p>I respect written/spoken contracts (NDA included). But not <copyright><span>copyright</span>.</copyright> Feel free to use what you see.</p>
+                <p>I respect written/spoken contracts (NDA included). But not <copyright><span>copyright</span>.
+                    </copyright> Feel free to use what you see.</p>
             </footer>
         </div>
     </div>
 </body>
+
 </html>
