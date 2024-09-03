@@ -148,12 +148,12 @@ p.quote::before {
     -webkit-tap-highlight-color: transparent !important;
 }
 
-.ascii-art>pre {
+.ascii-art>code {
     position: relative;
     cursor: pointer;
 }
 
-.ascii-art>pre::before {
+.ascii-art>code::before {
     content: 'NO TOUCHING!!!';
     position: absolute;
     left: 50%;
@@ -188,7 +188,7 @@ p.quote::before {
     opacity: 0;
 }
 
-.ascii-art>pre::after {
+.ascii-art>code::after {
     content: '>.<';
     position: absolute;
     left: 30%;
@@ -201,13 +201,13 @@ p.quote::before {
 }
 
 
-.ascii-art>pre:hover:active {
+.ascii-art>code:hover:active {
     transform-origin: center;
     transform: scale(.9);
 }
 
-.ascii-art>pre:hover:active::before,
-.ascii-art>pre:hover:active::after {
+.ascii-art>code:hover:active::before,
+.ascii-art>code:hover:active::after {
     visibility: visible;
     opacity: 1;
 }
